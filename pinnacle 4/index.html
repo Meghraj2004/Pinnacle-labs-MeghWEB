@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Awesome To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Super Awesome To-Do List</h1>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="What needs to be done?" aria-label="Enter a new task">
+                <button id="addTask" aria-label="Add task">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+            <div class="filter-container">
+                <button id="allTasks" class="filter-btn active">All</button>
+                <button id="activeTasks" class="filter-btn">Active</button>
+                <button id="completedTasks" class="filter-btn">Completed</button>
+            </div>
+            <ul id="taskList"></ul>
+            <div class="summary-container">
+                <span id="taskCount">0 tasks left</span>
+                <button id="clearCompleted">Clear Completed</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
